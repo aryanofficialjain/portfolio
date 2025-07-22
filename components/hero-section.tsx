@@ -18,7 +18,7 @@ export function HeroSection() {
           <h1 className="text-5xl md:text-7xl font-light tracking-tight">Aryan Jain</h1>
           <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-light">Full Stack Developer</h2>
           <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Building modern web experiences with MERN & AI
+            Building modern web experiences
           </p>
         </div>
 

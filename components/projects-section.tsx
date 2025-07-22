@@ -3,31 +3,30 @@ import Image from "next/image"
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Car Becho",
     description:
-      "Full-stack e-commerce solution built with MERN stack, featuring user authentication, payment integration, and admin dashboard.",
-    image: "/placeholder.svg?height=300&width=400",
-    github: "https://github.com/aryanofficialjain/ecommerce-app",
-    live: "https://ecommerce-demo.vercel.app",
-    tech: ["React", "Node.js", "MongoDB", "Express"],
+      "Full-stack e-commerce solution for buying and selling sports cars built with MERN stack, featuring user authentication, payment integration, and admin dashboard.",
+    image: "./project1.png",
+    github: "https://github.com/aryanofficialjain/Car_dealership",
+    live: "https://car-dealership-frontend-indol.vercel.app/",
+    tech: ["React", "Node.js", "MongoDB", "Express", "Mailtrap", "Captcha", "Mongoose", "Vercel", "Render", ],
   },
   {
-    title: "AI Chat Application",
+    title: "Chat Karo",
     description:
-      "Real-time chat application integrated with GPT API for intelligent conversations and automated responses.",
-    image: "/placeholder.svg?height=300&width=400",
-    github: "https://github.com/aryanofficialjain/ai-chat-app",
-    live: "https://ai-chat-demo.vercel.app",
-    tech: ["Next.js", "OpenAI API", "Socket.io", "Tailwind CSS"],
+      "Real-time chat application your personal private whatapps for one time communication.",
+    image: "./project2.png",
+    github: "https://github.com/aryanofficialjain/chat-app-with_filesharing",
+    live: "https://chat-app-with-filesharing.vercel.app/",
+    tech: ["Next.js", "OpenAI API", "Socket.io", "Tailwind CSS", "Vercel", "Render"],
   },
   {
-    title: "Task Management Tool",
+    title: "CryptoCurrency Tracker",
     description:
-      "Collaborative task management platform with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    image: "/placeholder.svg?height=300&width=400",
-    github: "https://github.com/aryanofficialjain/task-manager",
-    live: "https://task-manager-demo.vercel.app",
-    tech: ["React", "Firebase", "Material-UI", "Redux"],
+      "track the current market rate market cap of bitcoins.",
+    image: "./project3.png",
+    live: "https://real-time-cryptocurrency-tracker.vercel.app/",
+    tech: ["React", "Tailwind CSS", "Shadcn"],
   },
 ]
 

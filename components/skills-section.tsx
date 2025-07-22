@@ -13,15 +13,15 @@ const skillCategories = [
   },
   {
     title: "AI & Tools",
-    skills: ["ChatGPT", "Cursor", "Pearl", "Postman", "Git", "Vercel"],
+    skills: ["ChatGPT", "Cursor", "Pearl", "Postman", "Git", "Vercel", "Github"],
   },
   {
     title: "Game Development",
-    skills: ["Unity", "Unreal Engine", "C#", "Game Design"],
+    skills: ["Unity", "C#", "Game Design"],
   },
   {
     title: "Animation & Media",
-    skills: ["Blender", "DaVinci Resolve", "Video Editing", "3D Modeling"],
+    skills: ["DaVinci Resolve", "Video Editing"],
   },
 ]
 
