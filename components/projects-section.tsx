@@ -19,23 +19,23 @@ const mobileAppProjects = [
       "Cross-Platform",
     ],
   },
-  {
-    title: "FitApp",
-    description:
-      "An AI-powered fitness and nutrition tracking app that helps users monitor daily meals, protein and carb intake. Integrated with Gemini AI to generate personalized meal plans and health recommendations. Fully functional on both Android and iOS.",
-    image: "/fitapp.png",
-    github: "https://github.com/aryanofficialjain/FitApp",
-    live: "",
-    tech: [
-      "React Native",
-      "Expo",
-      "Android",
-      "iOS",
-      "AI Integration",
-      "Gemini AI",
-      "Nutrition Tracking",
-    ],
-  },
+  // {
+  //   title: "FitApp",
+  //   description:
+  //     "An AI-powered fitness and nutrition tracking app that helps users monitor daily meals, protein and carb intake. Integrated with Gemini AI to generate personalized meal plans and health recommendations. Fully functional on both Android and iOS.",
+  //   image: "/fitapp.png",
+  //   github: "https://github.com/aryanofficialjain/FitApp",
+  //   live: "",
+  //   tech: [
+  //     "React Native",
+  //     "Expo",
+  //     "Android",
+  //     "iOS",
+  //     "AI Integration",
+  //     "Gemini AI",
+  //     "Nutrition Tracking",
+  //   ],
+  // },
   {
     title: "Med Track",
     description:
@@ -52,24 +52,24 @@ const mobileAppProjects = [
       "Health App",
     ],
   },
-  // {
-  //   title: "FinApp",
-  //   description:
-  //     "A full-featured expense tracking app that allows users to manage income, expenses, and spending categories. Built with a scalable backend using Express, serverless PostgreSQL, Redis caching, Clerk authentication, and rate limiting. Backend hosted on Render.",
-  //   image: "/finapp.png",
-  //   github: "https://github.com/aryanofficialjain/finace_Management",
-  //   live: "",
-  //   tech: [
-  //     "React Native",
-  //     "Android",
-  //     "iOS",
-  //     "Express.js",
-  //     "Serverless PostgreSQL",
-  //     "Redis",
-  //     "Clerk Auth",
-  //     "Rate Limiting",
-  //   ],
-  // },
+  {
+    title: "FinApp",
+    description:
+      "A full-featured expense tracking app that allows users to manage income, expenses, and spending categories. Built with a scalable backend using Express, serverless PostgreSQL, Redis caching, Clerk authentication, and rate limiting. Backend hosted on Render.",
+    image: "/finapp.png",
+    github: "https://github.com/aryanofficialjain/finace_Management",
+    live: "",
+    tech: [
+      "React Native",
+      "Android",
+      "iOS",
+      "Express.js",
+      "Serverless PostgreSQL",
+      "Redis",
+      "Clerk Auth",
+      "Rate Limiting",
+    ],
+  },
 ]
 
 const projects = [
