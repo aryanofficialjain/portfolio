@@ -1,6 +1,77 @@
 import { ExternalLink, Github } from "lucide-react"
 import Image from "next/image"
 
+
+const mobileAppProjects = [
+  {
+    title: "Med Life",
+    description:
+      "A cross-platform meditation app designed for mental wellness. Users can read inspirational quotes, listen to calming meditation music, and practice guided meditation using a customizable timer. Built for both Android and iOS with a clean, distraction-free experience.",
+    image: "/medlife.png",
+    github: "https://github.com/aryanofficialjain/MedU",
+    live: "",
+    tech: [
+      "React Native",
+      "Expo",
+      "Android",
+      "iOS",
+      "Wellness App",
+      "Cross-Platform",
+    ],
+  },
+  {
+    title: "FitApp",
+    description:
+      "An AI-powered fitness and nutrition tracking app that helps users monitor daily meals, protein and carb intake. Integrated with Gemini AI to generate personalized meal plans and health recommendations. Fully functional on both Android and iOS.",
+    image: "/fitapp.png",
+    github: "https://github.com/aryanofficialjain/FitApp",
+    live: "",
+    tech: [
+      "React Native",
+      "Expo",
+      "Android",
+      "iOS",
+      "AI Integration",
+      "Gemini AI",
+      "Nutrition Tracking",
+    ],
+  },
+  {
+    title: "Med Track",
+    description:
+      "A medicine reminder and tracking app that helps users manage prescriptions, dosage schedules, and duration. Includes smart reminders and a reward-based system to encourage consistency and correct medication intake.",
+    image: "/medtrack.png",
+    github: "https://github.com/aryanofficialjain/med-track",
+    live: "",
+    tech: [
+      "React Native",
+      "Android",
+      "iOS",
+      "Notifications",
+      "Task Automation",
+      "Health App",
+    ],
+  },
+  // {
+  //   title: "FinApp",
+  //   description:
+  //     "A full-featured expense tracking app that allows users to manage income, expenses, and spending categories. Built with a scalable backend using Express, serverless PostgreSQL, Redis caching, Clerk authentication, and rate limiting. Backend hosted on Render.",
+  //   image: "/finapp.png",
+  //   github: "https://github.com/aryanofficialjain/finace_Management",
+  //   live: "",
+  //   tech: [
+  //     "React Native",
+  //     "Android",
+  //     "iOS",
+  //     "Express.js",
+  //     "Serverless PostgreSQL",
+  //     "Redis",
+  //     "Clerk Auth",
+  //     "Rate Limiting",
+  //   ],
+  // },
+]
+
 const projects = [
   // XR PROJECTS
   {
@@ -121,75 +192,122 @@ const projects = [
   },
 ]
 
+const ProjectCard = ({ project }: { project: any }) => (
+  <div className="bg-white dark:bg-black rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+    <div className="relative h-48 overflow-hidden">
+      <Image
+        src={project.image}
+        alt={project.title}
+        fill
+        className="object-cover"
+      />
+    </div>
+
+    <div className="p-6 space-y-4">
+      <h3 className="text-xl font-medium">{project.title}</h3>
+      <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+        {project.description}
+      </p>
+
+      <div className="flex flex-wrap gap-2">
+        {project.tech.map((tech: string, techIndex: number) => (
+          <span
+            key={techIndex}
+            className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-xs rounded-full"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+
+      {(project.github || project.live) && (
+        <div className="flex space-x-4 pt-2">
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
+            >
+              <Github className="h-4 w-4" />
+              <span className="text-sm">Code</span>
+            </a>
+          )}
+          {project.live && (
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
+            >
+              <ExternalLink className="h-4 w-4" />
+              <span className="text-sm">Live Demo</span>
+            </a>
+          )}
+        </div>
+      )}
+    </div>
+  </div>
+)
+
 export function ProjectsSection() {
+  const xrProjects = projects.slice(0, 2)
+  const gameProjects = projects.slice(2, 5)
+  const webProjects = projects.slice(5)
+
   return (
     <section id="projects" className="py-20 px-6 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-light mb-12 text-center">
+        <h2 className="text-3xl md:text-4xl font-light mb-16 text-center">
           Featured Projects
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-white dark:bg-black rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
-            >
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
+        {/* Mobile App Projects */}
+        <div className="mb-16">
+          <h3 className="text-2xl md:text-3xl font-light mb-8">
+            Mobile App Projects
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {mobileAppProjects.map((project, index) => (
+              <ProjectCard key={index} project={project} />
+            ))}
+          </div>
+        </div>
 
-              <div className="p-6 space-y-4">
-                <h3 className="text-xl font-medium">{project.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                  {project.description}
-                </p>
+        {/* XR Projects */}
+        <div className="mb-16">
+          <h3 className="text-2xl md:text-3xl font-light mb-8">
+            XR Projects
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {xrProjects.map((project, index) => (
+              <ProjectCard key={index} project={project} />
+            ))}
+          </div>
+        </div>
 
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-xs rounded-full"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+        {/* Game Projects */}
+        <div className="mb-16">
+          <h3 className="text-2xl md:text-3xl font-light mb-8">
+            Game Projects
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {gameProjects.map((project, index) => (
+              <ProjectCard key={index} project={project} />
+            ))}
+          </div>
+        </div>
 
-                {(project.github || project.live) && (
-                  <div className="flex space-x-4 pt-2">
-                    {project.github && (
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
-                      >
-                        <Github className="h-4 w-4" />
-                        <span className="text-sm">Code</span>
-                      </a>
-                    )}
-                    {project.live && (
-                      <a
-                        href={project.live}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
-                      >
-                        <ExternalLink className="h-4 w-4" />
-                        <span className="text-sm">Live Demo</span>
-                      </a>
-                    )}
-                  </div>
-                )}
-              </div>
-            </div>
-          ))}
+        {/* Web Projects */}
+        <div>
+          <h3 className="text-2xl md:text-3xl font-light mb-8">
+            Web Projects
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {webProjects.map((project, index) => (
+              <ProjectCard key={index} project={project} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

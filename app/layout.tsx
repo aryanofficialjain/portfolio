@@ -11,13 +11,13 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Aryan Jain - Full Stack Developer",
-  description: "Building modern web experiences with MERN & AI. Portfolio of Aryan Jain, Full Stack Developer.",
-  keywords: "Full Stack Developer, MERN Stack, Next.js, React, Node.js, AI, Web Development",
+  title: "Aryan Jain | React Native App Developer (Android & iOS)",
+  description: "React Native developer building scalable Android & iOS apps using Expo and modern UI/UX.",
+  keywords: "React Native Developer, Mobile App Developer, Android App Developer, iOS App Developer, Expo Developer, Cross Platform App Developer, React Native Freelance Developer, React Native Engineer, Mobile App Development, Fitness App Developer, AI App Developer, JavaScript Developer, TypeScript Developer, Software Engineer",
   authors: [{ name: "Aryan Jain" }],
   openGraph: {
-    title: "Aryan Jain - Full Stack Developer",
-    description: "Building modern web experiences with MERN & AI",
+    title: "Aryan Jain - React Native App Developer",
+    description: "React Native developer building scalable Android & iOS apps using Expo and modern UI/UX.",
     type: "website",
   },
     generator: 'v0.dev'

@@ -10,11 +10,7 @@ export function AboutSection() {
 
         <div className="space-y-8">
           <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-center max-w-3xl mx-auto">
-            Unity XR Developer focused on building immersive AR and VR experiences
-            with a strong foundation in game development and mobile performance
-            optimization. Experienced in shipping Unity projects, designing
-            interactive 3D systems, and translating ideas into scalable,
-            user-centric XR applications.
+            I’m a React Native software developer specializing in building cross-platform mobile applications for Android and iOS with a strong focus on performance, clean architecture, and scalability. I work with startups and product teams to turn ideas into production-ready apps, handling UI development, API integration, optimization, and release builds while prioritizing clear communication and long-term maintainability.
           </p>
 
           <div className="flex justify-center space-x-6 pt-8">
