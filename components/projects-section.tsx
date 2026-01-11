@@ -7,7 +7,8 @@ const mobileAppProjects = [
     title: "Med Life",
     description:
       "A cross-platform meditation app designed for mental wellness. Users can read inspirational quotes, listen to calming meditation music, and practice guided meditation using a customizable timer. Built for both Android and iOS with a clean, distraction-free experience.",
-    image: "/medlife.png",
+    image: "/medtationAppThumbnail.png",
+    alt: "Med Life meditation app screenshot showing cross-platform wellness features for Android and iOS",
     github: "https://github.com/aryanofficialjain/MedU",
     live: "",
     tech: [
@@ -23,7 +24,8 @@ const mobileAppProjects = [
   //   title: "FitApp",
   //   description:
   //     "An AI-powered fitness and nutrition tracking app that helps users monitor daily meals, protein and carb intake. Integrated with Gemini AI to generate personalized meal plans and health recommendations. Fully functional on both Android and iOS.",
-  //   image: "/fitapp.png",
+  //   image: "/FitAppThumbnail.png",
+  //   alt: "FitApp AI-powered fitness and nutrition tracking mobile app with Gemini AI integration",
   //   github: "https://github.com/aryanofficialjain/FitApp",
   //   live: "",
   //   tech: [
@@ -40,7 +42,8 @@ const mobileAppProjects = [
     title: "Med Track",
     description:
       "A medicine reminder and tracking app that helps users manage prescriptions, dosage schedules, and duration. Includes smart reminders and a reward-based system to encourage consistency and correct medication intake.",
-    image: "/medtrack.png",
+    image: "/Medtrackthumbnail.png",
+    alt: "Med Track medicine reminder and prescription tracking mobile app interface",
     github: "https://github.com/aryanofficialjain/med-track",
     live: "",
     tech: [
@@ -56,7 +59,8 @@ const mobileAppProjects = [
     title: "FinApp",
     description:
       "A full-featured expense tracking app that allows users to manage income, expenses, and spending categories. Built with a scalable backend using Express, serverless PostgreSQL, Redis caching, Clerk authentication, and rate limiting. Backend hosted on Render.",
-    image: "/finapp.png",
+    image: "/FinAppThumbnail.png",
+    alt: "FinApp expense tracking and finance management mobile application with backend integration",
     github: "https://github.com/aryanofficialjain/finace_Management",
     live: "",
     tech: [
@@ -78,7 +82,8 @@ const projects = [
     title: "AR Custom Cars",
     description:
       "Augmented Reality car customization experience allowing users to modify car colors, wheels, and visual styles in real time. Includes interactive AR-based drifting mechanics to demonstrate dynamic physics and user interaction in spatial environments.",
-    image: "/project4.png",
+    image: "/ArCarCustomizationThumbnail.png",
+    alt: "AR Custom Cars augmented reality car customization Unity project with real-time 3D interaction",
     github: "https://github.com/aryanofficialjain/Custom_Cars",
     live: "https://aryanofficialjain.itch.io/custom-cars",
     tech: [
@@ -94,7 +99,8 @@ const projects = [
     title: "VR Jewellery Store",
     description:
       "Virtual Reality jewellery store simulation where users can browse, select, and purchase jewellery using VR controllers. Implemented interactive product selection, price visualization, and a wallet-based purchase system within a fully immersive VR environment.",
-    image: "/project5.png",
+    image: "/VRGoldJewellaryThumbnail.png",
+    alt: "VR Gold Jewellery Store virtual reality shopping experience Unity VR project",
     github: "https://github.com/aryanofficialjain/Jewellery-Store-",
     tech: [
       "Unity",
@@ -111,7 +117,8 @@ const projects = [
     title: "Nightmare",
     description:
       "Third-person action combat game set in a dark fantasy world. Designed and developed enemy combat mechanics and player fighting systems while creating a custom environment using Unity Terrain for immersive world-building.",
-    image: "/project6.png",
+    image: "/NightMareThumbnail.png",
+    alt: "Nightmare third-person action combat game Unity dark fantasy gameplay screenshot",
     live: "https://aryanofficialjain.itch.io/papakipari",
     tech: [
       "Unity",
@@ -126,7 +133,8 @@ const projects = [
     title: "Khata Laga",
     description:
       "2D casual mobile game featuring a fun emoji character where players must avoid incoming spikes (khata). Focused on simple controls, fast-paced gameplay loops, and casual-friendly mechanics.",
-    image: "/project7.png",
+    image: "/KhataLagaThumbnail.png",
+    alt: "Khata Laga 2D casual mobile game Unity emoji character avoiding spikes gameplay",
     live: "https://aryanofficialjain.itch.io/katalaga",
     tech: [
       "Unity",
@@ -140,7 +148,8 @@ const projects = [
     title: "Parinda",
     description:
       "2D arcade-style game inspired by Flappy Bird with an Indian thematic touch. Implemented physics-driven movement, obstacle systems, and score tracking for a mobile-first gameplay experience.",
-    image: "/project8.png",
+    image: "/ParindaThumbnail.png",
+    alt: "Parinda 2D arcade mobile game Unity Flappy Bird inspired Indian themed gameplay",
     live: "https://aryanofficialjain.itch.io/parinda",
     tech: [
       "Unity",
@@ -156,7 +165,8 @@ const projects = [
     title: "Car Becho",
     description:
       "Full-stack e-commerce platform for buying and selling cars, featuring authentication, admin management, and deployment-ready architecture built using the MERN stack.",
-    image: "/project1.png",
+    image: "/CardealershipThumbnail.png",
+    alt: "Car Becho full-stack car dealership e-commerce platform MERN stack web application",
     github: "https://github.com/aryanofficialjain/Car_dealership",
     live: "https://car-dealership-frontend-indol.vercel.app/",
     tech: [
@@ -172,7 +182,8 @@ const projects = [
     title: "Chat Karo",
     description:
       "Real-time chat application built for private, one-time communication with file sharing support and live messaging using WebSockets.",
-    image: "/project2.png",
+    image: "/ChatwebappThumbnail.png",
+    alt: "Chat Karo real-time chat web application with file sharing and WebSocket messaging",
     github: "https://github.com/aryanofficialjain/chat-app-with_filesharing",
     live: "https://chat-app-with-filesharing.vercel.app/",
     tech: [
@@ -186,7 +197,8 @@ const projects = [
     title: "Cryptocurrency Tracker",
     description:
       "Web application for tracking real-time cryptocurrency prices and market data with a clean, responsive UI.",
-    image: "/project3.png",
+    image: "/BitcoinWebThumbnail.png",
+    alt: "Cryptocurrency Tracker real-time Bitcoin and crypto price tracking web application",
     live: "https://real-time-cryptocurrency-tracker.vercel.app/",
     tech: ["React", "Tailwind CSS", "API Integration"],
   },
@@ -197,7 +209,7 @@ const ProjectCard = ({ project }: { project: any }) => (
     <div className="relative h-48 overflow-hidden">
       <Image
         src={project.image}
-        alt={project.title}
+        alt={project.alt || project.title}
         fill
         className="object-cover"
       />
