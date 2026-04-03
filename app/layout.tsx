@@ -13,7 +13,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Aryan Jain | React Native App Developer (Android & iOS)",
   description: "React Native developer building scalable Android & iOS apps using Expo and modern UI/UX.",
-  keywords: "React Native Developer, Mobile App Developer, Android App Developer, iOS App Developer, Expo Developer, Cross Platform App Developer, React Native Freelance Developer, React Native Engineer, Mobile App Development, Fitness App Developer, AI App Developer, JavaScript Developer, TypeScript Developer, Software Engineer",
+  keywords: "AI Product Engineer, LLM Engineer, AI Content Automation, AI Agent Developer, React Native Developer, Mobile App Developer, Android App Developer, iOS App Developer, Expo Developer, Cross Platform App Developer, Next.js Developer, TypeScript Developer, Software Engineer",
   authors: [{ name: "Aryan Jain" }],
   openGraph: {
     title: "Aryan Jain - React Native App Developer",

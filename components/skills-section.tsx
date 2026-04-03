@@ -1,118 +1,71 @@
 const skillCategories = [
   {
-    title: "Mobile App Development",
+    title: "AI & Machine Learning",
     skills: [
-      "React Native",
-      "Expo",
-      "Cross-Platform Development",
-      "TypeScript",
-      "JavaScript (ES6+)",
-      "React Navigation",
-      "Redux / Zustand",
-      "React Native Paper",
-      "NativeBase",
-      "NativeWind (Tailwind CSS)",
-      "Firebase Integration",
-      "Firebase Authentication",
-      "Firebase Firestore",
-      "Firebase Cloud Functions",
-      "Google AdMob Integration",
-      "In-App Purchases",
-      "Push Notifications",
-      "AI Integration (Gemini AI)",
-      "OpenAI API Integration",
-      "RESTful APIs",
-      "GraphQL",
-      "React Native Reanimated",
-      "React Native Maps",
-      "Image Picker & Camera",
-      "Play Store Deployment",
-      "App Store Deployment",
-      "Xcode Configuration",
-      "Android Build Configuration",
-      "App Signing & Certificates",
-      "Performance Optimization",
-      "Bug Fixing & Debugging",
-      "Native Module Integration",
-      "Third-Party SDK Integration"
+      "Python",
+      "XGBoost",
+      "Scikit-learn",
+      "Feature Engineering",
+      "ML Pipelines",
+      "Model Training & Evaluation",
+      "Data Preprocessing",
+      "ZenML",
+      "MLOps",
+      "MCP Servers",
+      "Predictive Analytics",
+      "Feedback Loops & Retraining",
     ],
   },
   {
-    title: "XR / AR / VR Development",
+    title: "LLMs & NLP",
     skills: [
-      "Unity XR",
-      "XR Interaction Toolkit",
-      "AR Foundation",
-      "VR Development",
-      "AR Development",
-      "Mixed Reality",
-      "3D Interaction Design",
-      "Spatial UI",
-      "Android AR",
-      "Performance Optimization"
+      "OpenAI GPT-4",
+      "Google Gemini",
+      "Prompt Engineering",
+      "LangChain",
+      "Whisper (Speech-to-Text)",
+      "Text Generation",
+      "Sentiment Analysis",
+      "AI Agents",
     ],
   },
   {
-    title: "Unity & Game Development",
+    title: "Backend & Data Infrastructure",
     skills: [
-      "Unity",
-      "C#",
-      "Gameplay Programming",
-      "Game Mechanics",
-      "Mobile Game Development",
-      "Unity Addressables",
-      "App Store Publishing",
-    ],
-  },
-  {
-    title: "3D & XR Asset Pipeline",
-    skills: [
-      "Blender",
-      "Basic 3D Modeling",
-      "UV Mapping",
-      "Materials & Textures",
-      "Unity Import Pipeline",
-      "XR Asset Optimization"
-    ],
-  },
-  {
-    title: "Full Stack Development (Supporting)",
-    skills: [
-      "MongoDB",
-      "Express.js",
-      "React",
       "Node.js",
-      "Next.js",
+      "Express.js",
+      "FastAPI",
+      "MongoDB",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Redis",
       "REST APIs",
-      "Web Technologies"
     ],
   },
   {
-    title: "Frontend",
+    title: "Frontend & Product",
     skills: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
+      "Next.js",
+      "React",
+      "React Native",
       "TypeScript",
-      "Tailwind CSS"
+      "Tailwind CSS",
     ],
   },
   {
-    title: "Tools & Workflow",
+    title: "Tools & Deployment",
     skills: [
-      "Git",
-      "GitHub",
-      "Postman",
+      "Git & GitHub",
       "Vercel",
-      "ChatGPT",
-      "Cursor",
-      "DaVinci Resolve"
+      "Render",
+      "Docker",
+      "Postman",
     ],
   },
 ]
 
 export function SkillsSection() {
-  const mobileAppCategory = skillCategories[0]
+  const primaryCategory = skillCategories[0]
   const otherCategories = skillCategories.slice(1)
 
   return (
@@ -122,14 +75,14 @@ export function SkillsSection() {
           Skills & Technologies
         </h2>
 
-        {/* Mobile App Development - Full Width */}
+        {/* AI & Machine Learning - Full Width */}
         <div className="mb-12">
           <div className="space-y-4 p-8 rounded-2xl bg-gray-50 dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
             <h3 className="text-xl font-medium text-center mb-6">
-              {mobileAppCategory.title}
+              {primaryCategory.title}
             </h3>
             <div className="flex flex-wrap gap-2 justify-center">
-              {mobileAppCategory.skills.map((skill, skillIndex) => (
+              {primaryCategory.skills.map((skill, skillIndex) => (
                 <span
                   key={skillIndex}
                   className="px-3 py-2 bg-white dark:bg-black text-sm rounded-full border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-colors"
@@ -141,8 +94,8 @@ export function SkillsSection() {
           </div>
         </div>
 
-        {/* Other Skills - 3 Column Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Other Skills - Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {otherCategories.map((category, index) => (
             <div
               key={index}

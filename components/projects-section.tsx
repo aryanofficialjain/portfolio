@@ -2,6 +2,50 @@ import { ExternalLink, Github } from "lucide-react"
 import Image from "next/image"
 
 
+const aiProductProjects = [
+  {
+    title: "Uploadkar",
+    description:
+      "An AI-driven platform for content creators to create, optimize, and distribute content. Features an intelligent 'Title Intelligence Engine' that scores titles based on SEO/emotion, and a 10-stage AI pipeline for content growth. Built as a self-improving growth engine for multi-platform publishing.",
+    image: "/uploadkar.png",
+    alt: "Uploadkar AI-powered content growth platform for creators",
+    live: "https://uploadkar.com",
+    tech: [
+      "Next.js",
+      "Python",
+      "FastAPI",
+      "XGBoost",
+      "LLM APIs",
+      "Node.js",
+      "MongoDB",
+    ],
+  },
+  {
+    title: "JARVIS AI Agent",
+    description:
+      "An autonomous AI agent designed with task-performance capabilities, a persistent memory layer for continuous learning, and advanced decision-making logic to handle complex workflows independently.",
+    image: "/jarvis.png",
+    alt: "JARVIS autonomous AI agent with memory and decision capabilities",
+    live: "https://jarvis.uploadkar.com/",
+    tech: ["Python", "OpenAI", "Gemini AI", "Memory Systems", "AI Agents"],
+  },
+  {
+    title: "Recap AI",
+    description:
+      "A React Native mobile application that summarizes long meetings, generates transcriptions, and learns from user interactions to provide personalized insights and productivity suggestions.",
+    image: "/recapai.png",
+    alt: "Recap AI meeting summarizer and transcription mobile app",
+    live: "https://play.google.com/apps/testing/com.itzamanjain.recapaiexpo",
+    tech: [
+      "React Native",
+      "OpenAI Whisper",
+      "GPT-4",
+      "Node.js",
+      "Mobile AI",
+    ],
+  },
+]
+
 const mobileAppProjects = [
   {
     title: "Med Life",
@@ -273,6 +317,18 @@ export function ProjectsSection() {
         <h2 className="text-3xl md:text-4xl font-light mb-16 text-center">
           Featured Projects
         </h2>
+
+        {/* AI Products */}
+        <div className="mb-16">
+          <h3 className="text-2xl md:text-3xl font-light mb-8">
+            AI Products
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {aiProductProjects.map((project, index) => (
+              <ProjectCard key={index} project={project} />
+            ))}
+          </div>
+        </div>
 
         {/* Mobile App Projects */}
         <div className="mb-16">

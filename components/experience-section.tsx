@@ -15,7 +15,7 @@ export function ExperienceSection() {
                 <Briefcase className="h-6 w-6 text-green-600 dark:text-green-400" />
               </div>
               <div className="flex-1 space-y-3">
-                <h3 className="text-xl font-medium">Unity Developer — Skidos (US-based)</h3>
+                <h3 className="text-xl font-medium">Software Engineer — Skidos (US-based)</h3>
                 <div className="flex items-center space-x-4 text-gray-600 dark:text-gray-300">
                   <div className="flex items-center space-x-1">
                     <Calendar className="h-4 w-4" />
@@ -52,7 +52,7 @@ export function ExperienceSection() {
                 <Gamepad2 className="h-6 w-6 text-purple-600 dark:text-purple-400" />
               </div>
               <div className="flex-1 space-y-3">
-                <h3 className="text-xl font-medium">Game Developer Intern — Insanity Crew</h3>
+                <h3 className="text-xl font-medium">Software Developer Intern — Insanity Crew</h3>
                 <div className="flex items-center space-x-4 text-gray-600 dark:text-gray-300">
                   <div className="flex items-center space-x-1">
                     <Calendar className="h-4 w-4" />

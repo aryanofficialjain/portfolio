@@ -10,7 +10,7 @@ export function AboutSection() {
 
         <div className="space-y-8">
           <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-center max-w-3xl mx-auto">
-            I’m a React Native software developer specializing in building cross-platform mobile applications for Android and iOS with a strong focus on performance, clean architecture, and scalability. I work with startups and product teams to turn ideas into production-ready apps, handling UI development, API integration, optimization, and release builds while prioritizing clear communication and long-term maintainability.
+            I’m an AI Product Engineer specializing in building intelligent, agentic systems and high-performance cross-platform applications. With a background in React Native and full-stack development, I now focus on integrating LLMs, machine learning pipelines, and autonomous agents into production-ready products. I work with startups to turn complex AI concepts into scalable growth engines, prioritizing clean architecture and data-driven user experiences.
           </p>
 
           <div className="flex justify-center space-x-6 pt-8">
