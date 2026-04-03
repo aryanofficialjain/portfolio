@@ -2,6 +2,7 @@
 
 import { ArrowDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export function HeroSection() {
   const scrollToProjects = () => {
@@ -18,7 +19,7 @@ export function HeroSection() {
           <h1 className="text-5xl md:text-7xl font-light tracking-tight">Aryan Jain</h1>
           <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-light">AI Product Engineer</h2>
           <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
-          
+            Building autonomous agents, AI SaaS platforms, and high-performance mobile applications.
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
@@ -28,6 +29,14 @@ export function HeroSection() {
           >
             View Projects
           </Button>
+          <Link href="/resume">
+            <Button
+              variant="outline"
+              className="border-gray-300 dark:border-gray-700 hover:border-black dark:hover:border-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+            >
+              View Resume
+            </Button>
+          </Link>
         </div>
 
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
